@@ -836,12 +836,20 @@ h2 em {
   margin-bottom: 0;
 }
 
+.footer-corner {
+  display: flex;
+  align-items: flex-end;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: auto;
+}
+
 .asuc-sponsor {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
   gap: 9px;
-  margin-left: auto;
   color: white;
   font-size: 0.62rem;
   font-weight: 750;
@@ -856,6 +864,12 @@ h2 em {
   height: 50px;
   object-fit: contain;
   border-radius: 5px;
+}
+
+.site-credit {
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
 }
 
 .site-nav > a.active:not(.nav-cta)::after {
@@ -1563,6 +1577,10 @@ h2 em {
 
   .asuc-sponsor {
     margin-top: 8px;
+  }
+
+  .footer-corner {
+    align-items: flex-start;
     margin-left: 0;
   }
 
