@@ -872,6 +872,34 @@ h2 em {
   letter-spacing: 0.04em;
 }
 
+.floating-apply {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 17px;
+  color: white;
+  background: var(--purple);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  box-shadow: 0 12px 32px rgba(35, 35, 115, 0.26);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.floating-apply:hover,
+.floating-apply:focus-visible {
+  color: var(--navy-deep);
+  background: var(--mint);
+  transform: translateY(-2px);
+}
+
 .values-editorial {
   display: grid;
   grid-template-columns: minmax(190px, 0.62fr) minmax(0, 1.38fr);
@@ -940,6 +968,13 @@ h2 em {
 }
 
 @media (max-width: 760px) {
+  .floating-apply {
+    right: 14px;
+    bottom: 14px;
+    padding: 11px 14px;
+    font-size: 0.68rem;
+  }
+
   .values-editorial {
     grid-template-columns: 1fr;
     gap: 38px;
