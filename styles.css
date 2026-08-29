@@ -2473,11 +2473,6 @@ body {
   line-height: 0.96;
 }
 
-.events-page .floating-applications {
-  right: auto;
-  left: 22px;
-}
-
 .coffee-chat-strip {
   width: min(1180px, calc(100% - 48px));
   margin: -32px auto 0;
@@ -2705,10 +2700,6 @@ body {
 
   .events-hero h1 {
     font-size: clamp(3.1rem, 14vw, 4.3rem);
-  }
-
-  .events-page .floating-applications {
-    left: 14px;
   }
 
   .coffee-chat-strip {
