@@ -2832,7 +2832,7 @@ body {
 .headshot-rohan { object-position: 50% 42%; transform: scale(1.16) !important; }
 .headshot-anika { object-position: 50% 40%; transform: scale(1.14) !important; }
 .headshot-nathaniel { object-position: 50% 34% !important; transform: scale(1) !important; }
-.headshot-juhi { object-position: 50% 39% !important; transform: scale(1.18) !important; }
+.headshot-juhi { object-position: 49% 45% !important; transform: scale(1.26) !important; }
 .headshot-emmie { object-position: 50% 34%; }
 .headshot-manasi { object-position: 50% 40%; }
 .headshot-mahika { object-position: 50% 36%; transform: scale(1.42) !important; }
@@ -2844,7 +2844,7 @@ body {
 .person-card:hover .headshot-rohan { transform: scale(1.2) !important; }
 .person-card:hover .headshot-anika { transform: scale(1.18) !important; }
 .person-card:hover .headshot-nathaniel { transform: scale(1.04) !important; }
-.person-card:hover .headshot-juhi { transform: scale(1.22) !important; }
+.person-card:hover .headshot-juhi { transform: scale(1.3) !important; }
 .person-card:hover .headshot-kacie { transform: scale(1.1) !important; }
 .person-card:hover .headshot-mahika { transform: scale(1.46) !important; }
 .person-card:hover .headshot-anshika { transform: scale(1.46) !important; }
