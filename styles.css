@@ -1842,11 +1842,18 @@ h2 em {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.committee-heading {
+  margin: clamp(48px, 7vw, 82px) 0 18px;
+  color: var(--navy-deep);
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  letter-spacing: -0.045em;
+}
+
 .committee-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
-  margin-top: 22px;
+  margin-top: 0;
   background: rgba(76, 73, 185, 0.14);
   border: 1px solid rgba(76, 73, 185, 0.14);
   border-radius: 20px;
