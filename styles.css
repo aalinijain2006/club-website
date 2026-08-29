@@ -1860,10 +1860,28 @@ h2 em {
   overflow: hidden;
 }
 
-.committee-list div {
+.committee-list a {
+  position: relative;
+  display: block;
   min-height: 150px;
   padding: 26px;
+  color: var(--navy-deep);
   background: rgba(255, 255, 255, 0.94);
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.committee-list a::after {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: var(--purple);
+  content: "↗";
+}
+
+.committee-list a:hover,
+.committee-list a:focus-visible {
+  color: var(--purple);
+  background: #f0fffb;
 }
 
 .committee-list strong {
@@ -1877,6 +1895,13 @@ h2 em {
   color: rgba(13, 22, 56, 0.58);
   font-size: 0.83rem;
   line-height: 1.55;
+}
+
+#external-committee,
+#internal-committee,
+#finance-committee,
+#communications-committee {
+  scroll-margin-top: 96px;
 }
 
 .community-photo-break {
@@ -2035,7 +2060,7 @@ h2 em {
     margin-bottom: 42px;
   }
 
-  .committee-list div {
+  .committee-list a {
     min-height: 120px;
   }
 
