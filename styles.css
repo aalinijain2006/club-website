@@ -3119,3 +3119,8 @@ body {
     font-size: clamp(3.2rem, 15vw, 4.5rem);
   }
 }
+
+/* Keep the main About-page photo free of decorative overlays. */
+.hero-photo::after {
+  display: none;
+}
