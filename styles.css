@@ -2984,7 +2984,7 @@ body {
 
 /* Featured upcoming event */
 .upcoming-section {
-  padding: clamp(80px, 10vw, 140px) 0;
+  padding: clamp(100px, 12vw, 170px) 0;
   background: white;
 }
 
@@ -2997,7 +2997,7 @@ body {
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
   gap: clamp(42px, 7vw, 100px);
   align-items: center;
-  padding: clamp(28px, 5vw, 72px);
+  padding: clamp(38px, 6vw, 88px);
   background:
     radial-gradient(circle at 8% 12%, rgba(91, 205, 188, 0.24), transparent 30%),
     linear-gradient(135deg, #f6fbfc 0%, #f3f0ff 100%);
@@ -3008,7 +3008,7 @@ body {
 
 .upcoming-feature-copy h2 {
   margin: 20px 0 28px;
-  font-size: clamp(3rem, 6vw, 5.7rem);
+  font-size: clamp(3.3rem, 6.4vw, 6.2rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
 }
@@ -3034,7 +3034,7 @@ body {
 }
 
 .upcoming-feature-poster {
-  width: min(100%, 470px);
+  width: min(100%, 520px);
   margin-left: auto;
   overflow: hidden;
   background: #e9e7f4;
@@ -3076,54 +3076,27 @@ body {
   }
 }
 
-/* Reserve the Events header artwork for the latest upcoming-event flyer. */
+/* Keep the Events header focused and make the event feature below the focal point. */
 .events-hero {
-  min-height: 780px;
+  min-height: 680px;
 }
 
 .events-hero::before {
-  display: block;
-  background-image: url("assets/events/fall-2026-info-session.jpg");
-  background-color: #e8ecf6;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: none;
 }
 
 .events-hero h1 {
-  max-width: 48%;
-  font-size: clamp(3.8rem, 5.2vw, 5rem);
+  max-width: 900px;
+  font-size: clamp(4rem, 7.2vw, 7rem);
 }
 
 .events-hero .section-shell > p:last-child {
-  max-width: 46%;
-}
-
-.event-flyer-badge {
-  position: absolute;
-  z-index: 3;
-  top: 150px;
-  right: max(50px, calc((100vw - 1240px) / 2 + 24px));
-  margin: 0;
-  padding: 11px 18px;
-  color: var(--navy-deep);
-  background: var(--mint);
-  border-radius: 999px;
-  box-shadow: 0 12px 30px rgba(24, 36, 87, 0.2);
-  font-size: 0.74rem;
-  font-weight: 850;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  max-width: 680px;
 }
 
 @media (max-width: 620px) {
   .events-hero {
-    min-height: 900px;
-    padding: 465px 0 64px;
-  }
-
-  .event-flyer-badge {
-    top: 112px;
-    right: 24px;
+    min-height: 650px;
+    padding: 150px 0 80px;
   }
 }
