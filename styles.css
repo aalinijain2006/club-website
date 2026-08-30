@@ -2992,6 +2992,11 @@ body {
   margin-bottom: clamp(42px, 6vw, 76px);
 }
 
+.upcoming-section .eyebrow {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-weight: 850;
+}
+
 .upcoming-feature {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
@@ -3078,7 +3083,9 @@ body {
 
 /* Keep the Events header focused and make the event feature below the focal point. */
 .events-hero {
-  min-height: 680px;
+  min-height: 560px;
+  padding: 170px 0 96px;
+  text-align: center;
 }
 
 .events-hero::before {
@@ -3086,17 +3093,29 @@ body {
 }
 
 .events-hero h1 {
-  max-width: 900px;
-  font-size: clamp(4rem, 7.2vw, 7rem);
+  max-width: none;
+  width: 100%;
+  font-size: clamp(3.8rem, 6.6vw, 6.5rem);
+  line-height: 0.94;
 }
 
 .events-hero .section-shell > p:last-child {
   max-width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.events-hero .eyebrow {
+  justify-content: center;
 }
 
 @media (max-width: 620px) {
   .events-hero {
-    min-height: 650px;
-    padding: 150px 0 80px;
+    min-height: 590px;
+    padding: 145px 0 76px;
+  }
+
+  .events-hero h1 {
+    font-size: clamp(3.2rem, 15vw, 4.5rem);
   }
 }
