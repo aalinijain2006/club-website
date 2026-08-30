@@ -3071,3 +3071,28 @@ body {
     border-radius: 20px;
   }
 }
+
+/* Keep the Events header focused on the page introduction. */
+.events-hero {
+  min-height: 680px;
+}
+
+.events-hero::before {
+  display: none;
+}
+
+.events-hero h1 {
+  max-width: 900px;
+  font-size: clamp(4rem, 7.2vw, 7rem);
+}
+
+.events-hero .section-shell > p:last-child {
+  max-width: 680px;
+}
+
+@media (max-width: 620px) {
+  .events-hero {
+    min-height: 650px;
+    padding: 150px 0 80px;
+  }
+}
