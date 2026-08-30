@@ -2994,7 +2994,7 @@ body {
 
 .upcoming-feature {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
   gap: clamp(42px, 7vw, 100px);
   align-items: center;
   padding: clamp(28px, 5vw, 72px);
@@ -3099,9 +3099,31 @@ body {
   max-width: 46%;
 }
 
+.event-flyer-badge {
+  position: absolute;
+  z-index: 3;
+  top: 150px;
+  right: max(50px, calc((100vw - 1240px) / 2 + 24px));
+  margin: 0;
+  padding: 11px 18px;
+  color: var(--navy-deep);
+  background: var(--mint);
+  border-radius: 999px;
+  box-shadow: 0 12px 30px rgba(24, 36, 87, 0.2);
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 620px) {
   .events-hero {
     min-height: 900px;
     padding: 465px 0 64px;
+  }
+
+  .event-flyer-badge {
+    top: 112px;
+    right: 24px;
   }
 }
