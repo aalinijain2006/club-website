@@ -3124,3 +3124,43 @@ body {
 .hero-photo::after {
   display: none;
 }
+
+/* Keep sections balanced after removing their display headings. */
+.mission-grid-single {
+  grid-template-columns: minmax(0, 900px);
+}
+
+.mission-grid-single .mission-copy {
+  padding-top: 0;
+}
+
+.mission-grid-single .mission-copy > p:not(.lead) {
+  max-width: 760px;
+}
+
+.overview-heading-simple {
+  grid-template-columns: minmax(170px, 0.45fr) minmax(0, 1.55fr);
+  align-items: start;
+}
+
+.overview-heading-simple .eyebrow {
+  margin-top: 6px;
+}
+
+.next-event-cta-compact {
+  padding: clamp(70px, 9vw, 115px) 0;
+}
+
+.next-event-cta-compact .eyebrow {
+  margin-bottom: 28px;
+}
+
+.next-event-cta-compact p:not(.eyebrow) {
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+}
+
+@media (max-width: 900px) {
+  .overview-heading-simple {
+    grid-template-columns: 1fr;
+  }
+}
