@@ -1275,6 +1275,24 @@ h2 em {
   text-align: right;
 }
 
+.coffee-chat-details {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coffee-chat-strip .coffee-chat-limit {
+  padding: 8px 13px;
+  color: white;
+  background: var(--navy-deep);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .team-section {
   overflow: hidden;
 }
@@ -1756,6 +1774,10 @@ h2 em {
 
   .coffee-chat-strip p {
     text-align: left;
+  }
+
+  .coffee-chat-details {
+    align-items: flex-start;
   }
 
   .event-row,
