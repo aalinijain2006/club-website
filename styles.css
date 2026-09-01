@@ -2852,10 +2852,10 @@ body {
 }
 .headshot-aariya { object-position: center center; }
 .headshot-rohan {
-  object-position: 50% 60%;
+  object-position: center top;
   transform: scale(1) !important;
 }
-.headshot-anika { object-position: 50% 40%; transform: scale(1.14) !important; }
+.headshot-anika { object-position: center top; transform: scale(1) !important; }
 .headshot-nathaniel { object-position: 50% 34% !important; transform: scale(1) !important; }
 .headshot-juhi { object-position: 49% 45% !important; transform: scale(1.26) !important; }
 .headshot-shaylyn { object-position: 55% 50% !important; transform: scale(1.12) !important; }
@@ -2871,7 +2871,7 @@ body {
 .headshot-sanjana { object-position: 50% 35%; transform: scale(1.15) !important; }
 
 .person-card:hover .headshot-rohan { transform: scale(1) !important; }
-.person-card:hover .headshot-anika { transform: scale(1.18) !important; }
+.person-card:hover .headshot-anika { transform: scale(1) !important; }
 .person-card:hover .headshot-nathaniel { transform: scale(1.04) !important; }
 .person-card:hover .headshot-juhi { transform: scale(1.3) !important; }
 .person-card:hover .headshot-shaylyn { transform: scale(1.16) !important; }
