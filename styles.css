@@ -2852,9 +2852,8 @@ body {
 }
 .headshot-aariya { object-position: center center; }
 .headshot-rohan {
-  object-position: center top;
+  object-position: 50% 60%;
   transform: scale(1) !important;
-  transform-origin: center top;
 }
 .headshot-anika { object-position: 50% 40%; transform: scale(1.14) !important; }
 .headshot-nathaniel { object-position: 50% 34% !important; transform: scale(1) !important; }
@@ -2865,20 +2864,19 @@ body {
 .headshot-mahika {
   object-position: center top;
   transform: scale(1) !important;
-  transform-origin: center top;
 }
 .headshot-nithiyashree { object-position: 50% 41%; }
 .headshot-anshika { object-position: 50% 35%; transform: scale(1.42) !important; }
 .headshot-naim { object-position: 50% 40%; }
 .headshot-sanjana { object-position: 50% 35%; transform: scale(1.15) !important; }
 
-.person-card:hover .headshot-rohan { transform: scale(1.02) !important; }
+.person-card:hover .headshot-rohan { transform: scale(1) !important; }
 .person-card:hover .headshot-anika { transform: scale(1.18) !important; }
 .person-card:hover .headshot-nathaniel { transform: scale(1.04) !important; }
 .person-card:hover .headshot-juhi { transform: scale(1.3) !important; }
 .person-card:hover .headshot-shaylyn { transform: scale(1.16) !important; }
 .person-card:hover .headshot-kacie { transform: scale(1.1) !important; }
-.person-card:hover .headshot-mahika { transform: scale(1.02) !important; }
+.person-card:hover .headshot-mahika { transform: scale(1) !important; }
 .person-card:hover .headshot-anshika { transform: scale(1.46) !important; }
 .person-card:hover .headshot-sanjana { transform: scale(1.19) !important; }
 
