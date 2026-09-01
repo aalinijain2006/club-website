@@ -2828,8 +2828,8 @@ body {
   transform: scale(1.06) !important;
   transform-origin: left center;
 }
-.headshot-aariya { object-position: 50% 37%; }
-.headshot-rohan { object-position: 50% 42%; transform: scale(1.16) !important; }
+.headshot-aariya { object-position: center center; }
+.headshot-rohan { object-position: center center; transform: scale(1.16) !important; }
 .headshot-anika { object-position: 50% 40%; transform: scale(1.14) !important; }
 .headshot-nathaniel { object-position: 50% 34% !important; transform: scale(1) !important; }
 .headshot-juhi { object-position: 49% 45% !important; transform: scale(1.26) !important; }
