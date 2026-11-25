@@ -3192,3 +3192,224 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Placeholder for members whose headshot hasn't been added yet. */
+.person-photo.photo-pending {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(160deg, var(--navy) 0%, var(--purple) 100%);
+}
+
+.person-photo.photo-pending span {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ---- Fall 2026 group photos ---- */
+
+/* Home hero: landscape frame so the whole executive board fits. */
+.hero-photo {
+  background-image: url("assets/team/exec-board-fall-2026.jpg");
+  background-position: center 45%;
+  inset: auto max(28px, calc((100vw - 1240px) / 2)) auto 50%;
+  top: 50%;
+  height: auto;
+  aspect-ratio: 1800 / 1268;
+  transform: translateY(-46%);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 0;
+    padding-top: calc(150px + (100vw - 36px) * 0.705);
+  }
+
+  .hero-photo {
+    inset: 110px 18px auto;
+    height: auto;
+    transform: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-photo {
+    top: 96px;
+    background-position: center 45%;
+  }
+}
+
+/* Committee banners: group photo on top, description underneath. */
+.committee-banners {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 28px);
+}
+
+.committee-banner {
+  display: flex;
+  flex-direction: column;
+  color: var(--navy-deep);
+  background: white;
+  border: 1px solid rgba(76, 73, 185, 0.14);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: box-shadow 240ms ease, transform 240ms ease;
+}
+
+.committee-banner:hover,
+.committee-banner:focus-visible {
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.committee-banner figure {
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  background: var(--mist);
+  overflow: hidden;
+}
+
+.committee-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  transition: transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.committee-banner:hover img {
+  transform: scale(1.03);
+}
+
+.committee-banner-text {
+  padding: clamp(20px, 2.4vw, 30px);
+  border-top: 4px solid var(--mint);
+}
+
+.committee-banner:nth-child(even) .committee-banner-text {
+  border-top-color: var(--purple);
+}
+
+.committee-banner h4 {
+  margin: 0 0 8px;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  letter-spacing: -0.03em;
+}
+
+.committee-banner p {
+  margin: 0 0 18px;
+  color: rgba(13, 22, 56, 0.62);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.committee-banner span {
+  color: var(--teal);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .committee-banners {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Whole-board photo: taller frame, framed on faces rather than shoes. */
+.community-photo-break {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.community-photo-break img {
+  object-position: center 72%;
+}
+
+@media (max-width: 620px) {
+  .community-photo-break {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* Committee group photo at the top of each People section. */
+.team-banner {
+  margin: 0 0 clamp(26px, 3.5vw, 40px);
+  aspect-ratio: 21 / 9;
+  background: var(--mist);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.team-banner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+@media (max-width: 620px) {
+  .team-banner {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/* Fun photos page */
+.fun-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 2.6vw, 32px);
+}
+
+.fun-tile {
+  margin: 0;
+}
+
+.fun-tile:first-child {
+  grid-column: 1 / -1;
+}
+
+.fun-tile img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center 40%;
+  border: 8px solid white;
+  border-radius: 22px;
+  box-shadow: 0 22px 60px rgba(24, 36, 87, 0.12);
+}
+
+.fun-tile:first-child img {
+  aspect-ratio: 16 / 9;
+}
+
+.fun-tile figcaption {
+  margin-top: 14px;
+  padding-left: 8px;
+  color: var(--navy-deep);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .fun-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .fun-tile img,
+  .fun-tile:first-child img {
+    aspect-ratio: 4 / 3;
+    border-width: 5px;
+  }
+}
+
+/* Internal committee photo: keep the back row's heads in frame. */
+.team-banner img[src$="internal-committee.jpg"],
+.committee-banner img[src$="internal-committee.jpg"] {
+  object-position: center 8%;
+}
